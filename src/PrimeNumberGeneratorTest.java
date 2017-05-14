@@ -14,12 +14,12 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void TwoIsAPrimeNumber() {
-		assertEquals(true, generator.isPrime(2));
+		assertTrue(generator.isPrime(2));
 	}
 	
 	@Test
 	public void OneIsNotAPrimeNumber(){
-		assertEquals(false, generator.isPrime(1));
+		assertFalse(generator.isPrime(1));
 	}
 	
 	@Test
@@ -29,7 +29,7 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void ThreeIsAPrimeNumber(){
-		assertEquals(true, generator.isPrime(3));
+		assertTrue(generator.isPrime(3));
 	}
 	
 	@Test
