@@ -26,5 +26,10 @@ public class PrimeNumberGeneratorTest {
 	public void TwoIsTheOnlyPrimeNumberFromOneToTwo(){
 		assertEquals("[2]", generator.generate(1, 2).toString());
 	}
+	
+	@Test
+	public void ThreeIsAPrimeNumber(){
+		assertEquals(true, generator.isPrime(3));
+	}
 
 }
