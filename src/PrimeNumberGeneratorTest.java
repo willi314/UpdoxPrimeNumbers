@@ -21,5 +21,10 @@ public class PrimeNumberGeneratorTest {
 	public void OneIsNotAPrimeNumber(){
 		assertEquals(false, generator.isPrime(1));
 	}
+	
+	@Test
+	public void TwoIsTheOnlyPrimeNumberFromOneToTwo(){
+		assertEquals("[2]", generator.generate(1, 2).toString());
+	}
 
 }

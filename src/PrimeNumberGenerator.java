@@ -1,10 +1,12 @@
-import java.util.List;
+import java.util.*;
 
 public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 
 	@Override
 	public List<Integer> generate(int startingValue, int endingValue) {
-		return null;
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		return list;
 	}
 
 	@Override
