@@ -5,11 +5,11 @@ import org.junit.Test;
 
 public class PrimeNumberGeneratorTest {
 
-	PrimeNumberGenerator generator;
+	PrimesGenerator generator;
 	
 	@Before
 	public void init(){
-		generator = new PrimeNumberGenerator();
+		generator = new PrimesGenerator();
 	}
 	
 	@Test
