@@ -51,4 +51,9 @@ public class PrimeNumberGeneratorTest {
 	public void HighValueRangeTestForPrimeNumberGenerator(){
 		assertEquals("[7901, 7907, 7919]", generator.generate(7900, 7920).toString());
 	}
+	
+	@Test
+	public void ReturnsAllPrimesFromNineToOne(){
+		assertEquals("[2, 3, 5, 7]", generator.generate(9, 1).toString());
+	}
 }
