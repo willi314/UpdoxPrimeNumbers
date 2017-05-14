@@ -31,5 +31,10 @@ public class PrimeNumberGeneratorTest {
 	public void ThreeIsAPrimeNumber(){
 		assertEquals(true, generator.isPrime(3));
 	}
+	
+	@Test
+	public void FourIsNotAPrime(){
+		assertFalse(generator.isPrime(4));
+	}
 
 }
