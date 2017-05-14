@@ -17,7 +17,7 @@ public class PrimesGenerator implements PrimeNumberGenerator{
 		return true;
 	}
 	
-	public List<Integer> generatePrimes(int startingValue, int endingValue) {
+	private List<Integer> generatePrimes(int startingValue, int endingValue) {
 		ArrayList<Integer> primesList = new ArrayList<Integer>();
 		for(int i = startingValue; i <= endingValue; i++){
 			if(this.isPrime(i)) primesList.add(i);
