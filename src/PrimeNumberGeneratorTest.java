@@ -41,4 +41,9 @@ public class PrimeNumberGeneratorTest {
 	public void NineIsNotPrime(){
 		assertFalse(generator.isPrime(9));
 	}
+	
+	@Test
+	public void ReturnsAllPrimesFromOneToNine(){
+		assertEquals("[2, 3, 5, 7]", generator.generate(1, 9).toString());
+	}
 }

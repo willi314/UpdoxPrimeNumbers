@@ -4,9 +4,11 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 
 	@Override
 	public List<Integer> generate(int startingValue, int endingValue) {
-		ArrayList<Integer> list = new ArrayList<Integer>();
-		list.add(2);
-		return list;
+		ArrayList<Integer> primesList = new ArrayList<Integer>();
+		for(int i = startingValue; i <= endingValue; i++){
+			if(this.isPrime(i)) primesList.add(i);
+		}
+		return primesList;
 	}
 
 	@Override
@@ -14,8 +16,7 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 		if(value == 1) return false;
 		if(this.isEven(value)) return false;
 		for(int i = 3; i * i <= value; i += 2)
-	        if (value % i == 0) 
-	            return false;
+	        if (value % i == 0) return false;
 		return true;
 	}
 	
