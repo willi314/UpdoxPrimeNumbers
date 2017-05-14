@@ -37,4 +37,8 @@ public class PrimeNumberGeneratorTest {
 		assertFalse(generator.isPrime(4));
 	}
 
+	@Test
+	public void NineIsNotPrime(){
+		assertFalse(generator.isPrime(9));
+	}
 }

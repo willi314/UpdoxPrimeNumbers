@@ -13,6 +13,9 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 	public boolean isPrime(int value) {
 		if(value == 1) return false;
 		if(value > 2 && (value & 1) == 0) return false;
+		for(int i = 3; i * i <= value; i += 2)
+	        if (value % i == 0) 
+	            return false;
 		return true;
 	}
 }
